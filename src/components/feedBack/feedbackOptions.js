@@ -1,8 +1,9 @@
 import React from "react";
+import { FeedbackOptionsStyled } from "./FeedbackOptionStyled";
 
-const FeedBackOptions = ({ options, onLeaveFeedback }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <>
+    <FeedbackOptionsStyled>
       {options.map((option) => (
         <button
           className="feedbackBtn"
@@ -13,8 +14,8 @@ const FeedBackOptions = ({ options, onLeaveFeedback }) => {
           {option.title.charAt(0).toUpperCase() + option.title.slice(1)}
         </button>
       ))}
-    </>
+    </FeedbackOptionsStyled>
   );
 };
 
-export default FeedBackOptions;
+export default FeedbackOptions;

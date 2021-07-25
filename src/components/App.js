@@ -1,5 +1,5 @@
 import React from "react";
-import FeedBackOptions from "./feedBack/feedbackOptions";
+import FeedbackOptions from "./feedBack/FeedbackOptions";
 import Notification from "./notification/Notification";
 import Section from "./Section";
 import Statistics from "./statistics/Statistics";
@@ -36,12 +36,10 @@ class App extends React.Component {
     //переменные для передачи данных в компонент Statistics
     const total = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
-    console.log(options);
-
     return (
       <>
         <Section title="Please leave feedback">
-          <FeedBackOptions
+          <FeedbackOptions
             options={options}
             onLeaveFeedback={this.onLeaveFeedback}
           />
