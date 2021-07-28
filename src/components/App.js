@@ -12,14 +12,13 @@ class App extends React.Component {
     bad: 0,
   };
 
-  // options = Object.keys(this.state);
-
   onLeaveFeedback = (e) => {
-    const typeState = e.target.innerHTML.toLowerCase();
+    const { name } = e.target;
+    console.log(e);
 
     this.setState((prev) => {
       return {
-        [typeState]: prev[typeState] + 1,
+        [name]: prev[name] + 1,
       };
     });
   };

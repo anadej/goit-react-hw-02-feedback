@@ -1,5 +1,5 @@
 [
-  { "title": "Good", "name": "good_fb" },
-  { "title": "Bad", "name": "bad_fb" },
-  { "title": "Neutral", "name": "neutral_fb" }
+  { "title": "Good", "name": "good" },
+  { "title": "Bad", "name": "bad" },
+  { "title": "Neutral", "name": "neutral" }
 ]
